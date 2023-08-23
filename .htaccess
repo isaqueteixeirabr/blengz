@@ -1,0 +1,12 @@
+### Rewrite Rules Added by CyberPanel Rewrite Rule Generator
+
+##RewriteEngine On
+##RewriteCond %{HTTPS}  !=on
+##RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+### End CyberPanel Generated Rules.
+
+RewriteEngine On
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1

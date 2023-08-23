@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Blengs\\Conexao\\": "src/Conexao/",
+            "Blengs\\Models\\": "src/Models/",
+            "PagSeguro\\": "vendor/pagseguro/",
+            "PHPMailer\\": "vendor/PHPMailer/",
+            "Phois\\Whois": "src"
+        }
+    },
+    "require": {
+        "mercadopago/dx-php": "^2.4"
+    }
+}
